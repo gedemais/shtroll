@@ -1,9 +1,8 @@
 #!/bin/bash
-
 while true  
 do
-	sleep 100
-	osascript -e "set Volume 10"
+	sleep 2
+	nohup sh sound.sh &
 	afplay mohamedhenni.mp3
-	sleep 100
+	killall sound.sh
 done
